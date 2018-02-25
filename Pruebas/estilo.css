@@ -1,0 +1,13 @@
+
+#caja header h1{color:rgb(203, 212, 67);}
+.rojo{ color:rgb(62, 212, 107);} 
+table {
+    border-collapse: collapse;
+    caption-side: top;
+    background: linear-gradient(to rigth, red, blue);
+}
+table td {
+    border: solid rgb(128, 128, 128) 1px;
+}
+
+

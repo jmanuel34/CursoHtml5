@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Calculadora</title>
+	    <meta charset="utf-8">
+        <link rel ="stylesheet" href="estilo.css">
+	    <script type="text/javascript">
+		    function square() {
+  			    var num = document.getElementById("n1");
+  		    num.value = num.value * num.value;
+	    	}
+	    </script>
+	</head>
+
+	<h3>My Calculator</h3>
+	<h3>Nuevo titulo calculadora</h3>
+
+	<body>
+        <div id="caja">
+            <header class = "cabecera">Cabecera
+                <h1>Otra cabecera</h1>
+            </header>
+<!-- Comentario -->
+            <nav>
+                <ul>
+                    <li>Barra de navegación</li>
+                    <li>Menu 2</li>
+                </ul>
+            </nav>
+  		Number:
+  		    <input type="text" id="n1" placeholder="numero"></placeholder><p>
+            <input type ="text" name = "nombre" placeholder="nombre">
+			    <p class ="rojo">Parrafo rojo</p>
+            <button onclick="square()"> x<sup>2</sup> </button>
+            <article>Párrafo de texto</article>
+        </div>
+        <div id ="tabla>">
+            <table>
+                <tr>
+                    <td>Columna 1</td>
+                    <td>Columna 2</td>
+                </tr>
+                <tr>
+                    <td>Columna 3</td>
+                    <td>Columna 4</td>
+                </tr>
+                <caption>Leyenda:</caption>
+            </table>
+            <div>
+                <video src= "/Users/jmanuel/Documents/Desarrollo/Curso HTML5 MiriadaX/videos/MOOC.-HTML5-Herencia-CSS.webm.mp4" controls> </video>
+            </div>
+        </div>
+            <picture>
+                <source media= "(min-width=1100px)" scrset= "imagen1100.png">
+                <source media= "(min-width=1000px)" scrset= "imagen1000.png">
+                <source media= "(min-width=800px)" scrset= "imagen800.png">
+                <source media= "(min-width=600px)" scrset= "imagen600.png">
+                <source media= "(min-width=400px)" scrset= "imagen400.png">
+                <source media= "(min-width=300px)" scrset= "imagen300.png">
+                    <img src= "imagen300.png" alt ="imagen">
+            </picture>
+        <div>
+
+        </div>
+
+        <footer>Pié de página</footer>
+	</body>
+</html>
