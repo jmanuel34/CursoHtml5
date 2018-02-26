@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <style type = "text/css">
+
+        /* Menu */
+
+            .top_menu ul {
+    	        list-style:none;
+	            float:left;
+	            border: 1px dashed;
+	            padding: 2%;
+	            width:95%;
+	        }
+	        .top_menu ul l {
+        	    float:left;
+	            margin-right:20px;
+	            margin-bottom:10px;
+	            background: #ff812d;
+	            padding:5px;
+	            border-radius: 15%;
+	        }
+	        .top_menu ul li a {
+        	    color: rgb(56, 28, 28);
+	            text-decoration:none;
+	        }
+	        .top_menu ul li a:hover{
+        	    color: blue;
+	        }
+
+
+       /* Fin de menu */
+            /* Aplicado a un id: puntuacion 0100 */
+            #seccionCabecera {font-size: 1em;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color:rgba(0, 0, 0, 0.495);
+                    margin-top: 2em;}
+
+            #contenedor header {color:black;}
+
+             /* Aplicado a elemento y clase: Puntuacion 1100 */
+            .cabecera h1 {color: rgb(102, 109, 3);
+                        font-size: 24px;}
+
+            /* Puntuacion ´1000 */          
+            h1 {color: goldenrod;}
+            /* Puntuacion ´1000 Efectiva por estar en ultimo lugar */
+            h1 {color: gold;}
+            footer {
+                color:goldenrod;
+                text-align: right;
+            } 
+              
+        </style>
+        <title>Secciones y lineas generales de un documento HTML5.</title>
+    </head>
+    <body>
+        <div id="contenedor"> <!-- 1 id 0100 -->
+            <header class="cabecera"> <!-- 1 Clase 0010 -->
+                    <nav class = "top_menu">
+                        <ul>
+                            <li><a href="#">Menu1</a></li>
+                            <li><a href="#">Menu2</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            <article>
+                <section id = "seccion1">
+                    <section id = "seccionCabecera">
+                            <h3>Problemas resueltos por HTML5</h3> 
+                    </section>                      
+                    <section id = "seccionSumario">
+                        La definición de la estructura de un documento en HTML 4 y su 
+                        algoritmo de perfilado es muy tosco y genera numerosos problemas:
+                    </section>
+                    <section id = "seccionCuerpo">
+                            <ol>
+                                <li>
+                                        HTML5 quita la necesidad de elementos &lt;div&gt; para definir secciones semánticas 
+                                        sin definir valores específicos para los atributos class, introduciendo un nuevo 
+                                        elemento, &lt;section&gt;, el elemento de sección HTML.
+                                </li>
+                                <li>Mezclar varios documentos es difícil: la inclusión de un sub-documento en un documento 
+                                    principal. Esto se resuelve en HTML5 con los elementos de seccionado (Mezclar varios 
+                                    documentos es difícil: la inclusión de un sub-documento en un documento principal. 
+                                    Esto se resuelve en HTML5 con los elementos de seccionado (&lt;article&gt;, &lt;section&gt;, 
+                                    &lt;nav&gt; y &lt;aside&gt;) son siempre subsecciones de su sección ancestra más cercana. 
+                                </li>
+                                <li>
+                                        HTML5 introduce el elemento &lt;hgroup&gt; que oculta todos los elementos de cabecera excepto 
+                                        el primero de más alto rango (por ejemplo, &lt;hgroup&gt;&lt;h1&gt;Justine&lt;/h1&gt;&lt;h2&gt;
+                                        Les Malheurs de la Vertu&lt;/h2&gt;&lt;/hgroup&gt; crea el perfil 1. Justine).
+                                </li>
+                                <li>
+                                        Un documento puede tener secciones especiales conteniendo información relacionado que no es parte del 
+                                        flujo principal. HTML5 introduce el elemento Un documento puede tener secciones especiales 
+                                        conteniendo información relacionado que no es parte del flujo principal. HTML5 introduce el 
+                                        elemento &lt;aside&gt; permitiendo a dichas secciones no ser parte del perfil principal.
+                                </li>
+                                <li>
+                                        Hay información relacionada no al documento pero si al sitio entero, como logos, menús, tablas de contenidos, 
+                                        o información de derechos de autor y notas legales. Para ese propósito, HTML5 introduce tres 
+                                        elementos de sección específicos: &lt;nav&gt; para colecciones de enlaces, como una tabla de contenidos, &lt;footer&gt; y &lt;header&gt; 
+                                        información relacionada con el sitio.
+                                </li>
+                            </ol>                                                  
+                    </section>
+                    <section id = "seccionPie">
+                            De manera más general, HTML5 trae precisión a las características de seccionado y cabecera, 
+                            permitiendo a los perfiles de documento ser predecibles y usados por el navegador para mejorar 
+                            la experiencia de usuario.
+                    </section> 
+                
+                <section id = "section2">
+                    <section id= "seccionCabecera">
+                        <h3> El algoritmo de perfilado de HTML5</h3>                           
+                    </section>
+                    <section id = "seccionSumario">
+
+                    </section>
+                    <section id = "seccionCuerpo">
+                        <section id = "subseccionCuerpo">
+                                Definiendo secciones en HTML5
+                        </section>
+                        <section>
+                                Todo el contenido incluido dentro del elemento &lt;body&gt; es parte de una
+                                     sección. Las secciones en HTML5 pueden ser anidadas. Además de 
+                                     la sección principal, definida por el elemento &lt;body>, los límites de la sección son 
+                                         definidos explícita o implícitamente. La secciones definidas explícitamente son el contenido 
+                                         definido en las etiquetas &lt;body&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;
+                                         , &lt;header&gt;, y &lt;nav&gt;. 
+                                             Nota: Cada sección puede tener su propia jerarquía de cabeceras. Por lo tanto, incluso 
+                                             una sección anidada puede tener un elemento &lt;h1&gt;. Consulte también Definiendo cabeceras en 
+                                                 HTML5.
+                        </section>
+                        <section>
+                                Ejemplo:
+                                <aside>
+                                        <p>&lt;section&gt;</p>
+                                               <p> &lt;h1&gt;Forest elephants&lt;/h1&gt;</p>
+                                               <p>&lt;h1&gt;Introduction&lt;/h1&gt;</p>
+                                                <p> &lt;p&gt;In this section, we discuss the lesser known forest elephants.</p>
+                                                <p>&lt;/section&gt;</p>
+                                                <p>&lt;section&gt;</p>
+                                                <p>&lt;h1&gt;Habitat&lt;/h1&gt;</p>
+                                                <p>&lt;p&gt;Forest elephants do not live in trees but among them.</p>
+                                                <p>&lt;/section&gt;</p>
+                                                <p>&lt;aside&gt;</p>
+                                                <p>&lt;p&gt;advertising block</p>
+                                                <p> &lt;/aside&gt;</p>
+                                                <p>&lt;/section&gt;</p>
+                                                <p>&lt;footer&gt;</p>
+                                                <p>&lt;p&gt;(c) 2010 The Example company</p>
+                                                <p>&lt;/footer&gt;</p>
+                                </aside>  
+                        </section>                                                                                                             
+                    </section>
+                    <section id = "seccionPie"></section>
+                </section>
+            </article>
+            <footer>
+                Pie de pagina Jm.
+            </footer>
+            
+        </div>
+    </body>
+</html>
+
+
